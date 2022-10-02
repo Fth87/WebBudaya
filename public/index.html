@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.1/dist/flowbite.min.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="p-0 m-0">
+    <!-- Navbar -->
+    <header class="z-50 bg-transparent absolute w-full items-center transition duration-150 ease-in-out">
+      <div class="mx-4 2xl:mx-10 2xl:my-5 xl:my-2 px-2">
+        <div class="flex items-center relative justify-between">
+          <div class="px-4">
+            <a href="#home" class="nav-text font-extrabold text-white text-2xl py-2 flex">
+              <!-- <img src="" width="30px" alt="" class="mr-1.5 fill-black" />  -->
+              WeNdo</a
+            >
+          </div>
+
+          <div class="flex px-4 mr-10 items-center">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="white line hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+              <span class="white line hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="white line hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="dark:bg-neutral-900 lg:text-white hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:dark:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none font-semibold"
+            >
+              <ul class="block lg:flex 2xl:text-2xl dark:text-white nav-text">
+                <li class="group">
+                  <a href="#beranda" class="text-dark py-2 mx-8 flex group-hover:text-main">Beranda</a>
+                </li>
+                <li class="group">
+                  <a href="rumah.html" class="text-dark py-2 mx-8 flex group-hover:text-main">Rumah</a>
+                </li>
+                <li class="group">
+                  <a href="tari.html" class="text-dark py-2 mx-8 group-hover:text-main flex">Tari</a>
+                </li>
+                <li class="group">
+                  <a href="adat.html" class="text-dark py-2 mx-8 group-hover:text-main flex">adat</a>
+                </li>
+                <li class="group">
+                  <a href="galeri.html" class="text-dark py-2 mx-8 group-hover:text-main flex">Galeri</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Carousel -->
+    <div id="indicators-carousel" class="relative" data-carousel="static">
+      <!-- Carousel wrapper -->
+      <div class="relative h-screen w-full overflow-hidden">
+        <!-- Item 1 -->
+        <div id="carousel-item-1" class="duration-700 ease-in-out w-full h-full absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
+          <img src="assets/img/beranda/branda.jpg" class="absolute object-cover object-center block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-50" alt="..." />
+          <div class="absolute w-full h-full">
+            <div class="flex w-full h-full justify-center">
+              <div class="self-end mb-[30%] md:mb-[10%] text-white font-bold sm:text-3xl lg:text-4xl 2xl:text-5xl p-4 text-center tracking-wide">
+                Indonesia tanah airku tanah tumpah darahku <br />
+                <span class="font-light sm:text-lg md:text-xl xl:text-4xl">Disanalah aku berdiri jadi pandu ibuku</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div id="carousel-item-2" class="duration-700 ease-in-out w-full h-full absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
+          <img src="assets/img/beranda/branda2.jpg" class="absolute object-cover object-center block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-50" alt="..." />
+          <div class="absolute w-full h-full">
+            <div class="flex w-full h-full justify-center">
+              <div class="self-center text-white font-bold sm:text-2xl lg:text-4xl 2xl:text-5xl p-4 text-center tracking-wide">
+                Untuk Indonesia jadilah legenda <br />
+                <span class="font-light sm:text-lg md:text-xl xl:text-4xl">Kita bisa dan percaya</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div id="carousel-item-3" class="duration-700 ease-in-out w-full h-full absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
+          <img src="assets/img/beranda/branda3.jpg" class="absolute object-cover object-center block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-50" alt="..." />
+          <div class="absolute w-full h-full">
+            <div class="flex w-full h-full justify-center">
+              <div class="self-start mt-[30%] md:mt-[10%] text-white font-bold text-2xl lg:text-5xl 2xl:text-6xl p-4 text-center tracking-wide">
+                <p>Untuk Indonesia kita punya semua</p>
+                <p class="mt-10 font-light text-lg md:text-xl lg:text-2xl">Seribu budaya dan kekayaan alamnya tak terkalahkan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+          <button id="carousel-indicator-1" type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button id="carousel-indicator-2" type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button id="carousel-indicator-3" type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" id="data-carousel-prev" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 group-hover:bg-white/50">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button" id="data-carousel-next" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 group-hover:bg-white/50">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <!-- Carousel end -->
+
+    <!-- Map -->
+    <div class="h-screen w-full flex relative overflow-hidden justify-center">
+      <div class="w-[150%] h-[150%] absolute z-0 -bottom-[20rem] -left-[10rem]">
+        <img src="assets/component/map3.svg" alt="" class="object-center object-cover z-0" />
+      </div>
+      <p class="w-[80%] z-10 self-center text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-slate-800">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque voluptatum, molestiae id qui, explicabo facere itaque unde possimus repudiandae tempora, earum doloremque deleniti temporibus. Corrupti suscipit fugit nemo
+        recusandae error reprehenderit veritatis, reiciendis blanditiis? Quod vero laborum ducimus placeat iure hic, odit delectus itaque? Debitis iste corporis fugit dolore cupiditate? Culpa, ipsa minus possimus dignissimos dolor error
+        quos quia aspernatur nesciunt maiores quo blanditiis atque? Illum magnam, odit placeat natus at magni voluptates culpa consequatur voluptate quis repellat. Quam rerum consectetur minima. Dignissimos maiores similique eaque magni
+        repudiandae, blanditiis veniam itaque consectetur, enim libero provident. Reiciendis quos exercitationem eligendi!
+      </p>
+    </div>
+    <!-- Map end -->
+
+    <!-- Quotes Owi -->
+    <div class="w-full h-[600px] lg:h-[650px] xl:h-[700px] 2xl:h-[750px] lg:flex flex-none mt-10">
+      <div class="flex lg:w-[30%] h-[400px] lg:h-full w-full relative justify-center lg:justify-end lg:ml-10">
+        <div class="absolute top-6 lg:top-28 xl:top-24 2xl:top-20 lg:right-[10%] text-center text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+          <span class="font-semibold">Jokowi Dodo</span>
+          <br />
+          <span>Presiden Indonesia ke-7</span>
+        </div>
+        <div class="w-[200px] lg:w-[300px] xl:w-[350px] 2xl:w-[400px] h-[200px] lg:h-[300px] xl:h-[350px] 2xl:h-[400px] self-center">
+          <img src="assets/img/quotes/Jokowi.jpeg" alt="" class="rounded-full shadow w-full h-full object-center object-cover" />
+        </div>
+      </div>
+      <div class="w-[100%] h-[50%] lg:h-full flex justify-center">
+        <div class="flex lg:self-center self-start w-[70%] h-[60%] lg:h-[30%] justify-self-center justify-center relative">
+          <div class="absolute top-0 left-0">
+            <img src="assets/component/titik koma.png" alt="" class="w-[40px] lg:w-[50px] xl:w-[60px] 2xl:w-[70px]" />
+          </div>
+          <div class="absolute bottom-0 right-0 rotate-180">
+            <img src="assets/component/titik koma.png" alt="" class="w-[40px] lg:w-[50px] xl:w-[60px] 2xl:w-[70px]" />
+          </div>
+          <div class="self-center">
+            <p class="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-slate-800">menurut saya inti dari <span class="font-semibold">kebudayaan</span> adalah ialah <span class="font-semibold">kesenangan</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Quotes Owi end -->
+
+    <!-- Quotes Fiesta Besari -->
+    <div class="w-full lg:w-[95%] h-[600px] lg:h-[650px] xl:h-[700px] 2xl:h-[750px] grid grid-rows-2 lg:grid-rows-1 flex-none mt-10">
+      <div class="w-[100%] h-[50%] lg:h-full flex justify-center row-start-2 lg:row-start-1">
+        <div class="flex lg:self-center self-start w-[70%] h-[180%] lg:h-[60%] justify-self-center justify-center relative mt-16 lg:mt-0">
+          <div class="absolute top-0 left-0">
+            <img src="assets/component/titik koma.png" alt="" class="w-[40px] lg:w-[50px] xl:w-[60px] 2xl:w-[70px]" />
+          </div>
+          <div class="absolute bottom-0 right-0 rotate-180">
+            <img src="assets/component/titik koma.png" alt="" class="w-[40px] lg:w-[50px] xl:w-[60px] 2xl:w-[70px]" />
+          </div>
+          <div class="self-center">
+            <p class="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-slate-800">
+              Bahasa kita <span class="font-semibold">berbeda,</span> budaya kita <span class="font-semibold">berbeda,</span> agama kita <span class="font-semibold">berbeda,</span> bukankah itu indah? acungkan kepalmu kawan,lawan
+              <span class="font-semibold">ketidak adilan.</span> Satukan semangat kita, anak semua bangsa
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex h-[400px] lg:h-full w-full relative justify-center lg:justify-start row-start-1">
+        <div class="absolute top-6 lg:top-28 xl:top-24 2xl:top-20 lg:right-[27%] text-center text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+          <span class="font-semibold">Fiersa Besari</span>
+          <br />
+          <span>Penulis, musisi</span>
+        </div>
+        <div class="w-[200px] lg:w-[300px] xl:w-[350px] 2xl:w-[400px] h-[200px] lg:h-[300px] xl:h-[350px] 2xl:h-[400px] self-center">
+          <img src="assets/img/quotes/fiersa besari.jpg" alt="" class="rounded-full shadow w-full h-full object-center object-cover" />
+        </div>
+      </div>
+    </div>
+    <!-- Quotes Fiesta Besari end -->
+
+    <!-- Quotes Gus Dur -->
+    <div class="w-full h-[600px] lg:h-[650px] xl:h-[700px] 2xl:h-[750px] lg:flex flex-none mt-28 lg:mt-14">
+      <div class="flex lg:w-[30%] h-[400px] lg:h-full w-full relative justify-center lg:justify-end lg:ml-10">
+        <div class="absolute top-6 lg:top-28 xl:top-24 2xl:top-20 lg:right-[10%] text-center text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+          <span class="font-semibold">Abdurrahman Wahid</span>
+          <br />
+          <span>Presiden Indonesia ke-4</span>
+        </div>
+        <div class="w-[200px] lg:w-[300px] xl:w-[350px] 2xl:w-[400px] h-[200px] lg:h-[300px] xl:h-[350px] 2xl:h-[400px] self-center">
+          <img src="assets/img/quotes/gus dur.jpg" alt="" class="rounded-full shadow w-full h-full object-center object-cover" />
+        </div>
+      </div>
+      <div class="w-[100%] h-[50%] lg:h-full flex justify-center">
+        <div class="flex lg:self-center self-start w-[70%] h-[110%] lg:h-[60%] justify-self-center justify-center relative">
+          <div class="absolute top-0 left-0">
+            <img src="assets/component/titik koma.png" alt="" class="w-[40px] lg:w-[50px] xl:w-[60px] 2xl:w-[70px]" />
+          </div>
+          <div class="absolute bottom-0 right-0 rotate-180">
+            <img src="assets/component/titik koma.png" alt="" class="w-[40px] lg:w-[50px] xl:w-[60px] 2xl:w-[70px]" />
+          </div>
+          <div class="self-center">
+            <p class="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-slate-800">
+              <span class="font-semibold">islam</span> datang bukan untuk <span class="font-semibold">mengubah budaya</span> leluhur kita untuk jadi budaya arab.bukan untuk aku jadi ana, sampeyan jadi antum, sedulur jadi akhi. kita
+              pertahankan milik kita, <span class="font-semibold">kita harus filtrasi budayanya,</span> tapi bukan ajarannya
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Quotes Gus Dur end -->
+
+    <div class="h-[600px]"></div>
+    <!-- peta indonesia -->
+    <div class="grid my-24">
+      <div class="relative">
+        <!-- Tari lilin -->
+        <a href="" class="absolute top-[17%] left-[7%] transition-transform ease-in-out duration-300 hover:scale-125">
+          <img src="assets/component/map.png" alt="" class="w-[20px] md:w-[25px] lg:w-[30px] xl:w-[35px] 2xl:w-[40px]" />
+        </a>
+        <!-- Bakar Tongkang -->
+        <a href="" class="absolute top-[30%] left-[17%] transition-transform ease-in-out duration-300 hover:scale-125">
+          <img src="assets/component/map.png" alt="" class="w-[20px] md:w-[25px] lg:w-[30px] xl:w-[35px] 2xl:w-[40px]" />
+        </a>
+        <!-- Tatung -->
+        <a href="" class="absolute top-[30%] left-[33%] transition-transform ease-in-out duration-300 hover:scale-125">
+          <img src="assets/component/map.png" alt="" class="w-[20px] md:w-[25px] lg:w-[30px] xl:w-[35px] 2xl:w-[40px]" />
+        </a>
+        <!-- dugderan -->
+        <a href="" class="absolute bottom-[42%] left-[30%] transition-transform ease-in-out duration-300 hover:scale-125">
+          <img src="assets/component/map.png" alt="" class="w-[20px] md:w-[25px] lg:w-[30px] xl:w-[35px] 2xl:w-[40px]" />
+        </a>
+        <!-- reog -->
+        <a href="" class="absolute bottom-[39%] left-[36%] transition-transform ease-in-out duration-300 hover:scale-125">
+          <img src="assets/component/map.png" alt="" class="w-[20px] md:w-[25px] lg:w-[30px] xl:w-[35px] 2xl:w-[40px]" />
+        </a>
+        <!-- kecak -->
+        <a href="" class="absolute bottom-[37%] left-[42%] transition-transform ease-in-out duration-300 hover:scale-125">
+          <img src="assets/component/map.png" alt="" class="w-[20px] md:w-[25px] lg:w-[30px] xl:w-[35px] 2xl:w-[40px]" />
+        </a>
+        <!-- rumah bale -->
+        <a href="" class="absolute bottom-[36%] right-[42%] transition-transform ease-in-out duration-300 hover:scale-125">
+          <img src="assets/component/map.png" alt="" class="w-[20px] md:w-[25px] lg:w-[30px] xl:w-[35px] 2xl:w-[40px]" />
+        </a>
+        <!-- Rumah tongkongan -->
+        <a href="" class="absolute top-[36%] right-[45%] transition-transform ease-in-out duration-300 hover:scale-125">
+          <img src="assets/component/map.png" alt="" class="w-[20px] md:w-[25px] lg:w-[30px] xl:w-[35px] 2xl:w-[40px]" />
+        </a>
+        <!-- Papua Nugini -->
+        <a href="" class="absolute top-[45%] right-[10%] transition-transform ease-in-out duration-300 hover:scale-125">
+          <img src="assets/component/map.png" alt="" class="w-[20px] md:w-[25px] lg:w-[30px] xl:w-[35px] 2xl:w-[40px]" />
+        </a>
+
+        <div class="w-full h-auto">
+          <img src="assets/component/map.svg" alt="" class="w-full h-full object-cover" />
+        </div>
+      </div>
+      <div class="text-center text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-slate-800 w-[80%] justify-self-center">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold">Bhinneka Tunggal Ika</h1>
+        <p>Kami memang berbeda, namun kami selalu memegang teguh Bhinneka Tunggal ika. Walaupun berbeda beda namun tetap satu jua</p>
+      </div>
+    </div>
+    <!-- peta indonesia end -->
+
+    <div class="h-[600px]"></div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+  </body>
+</html>
