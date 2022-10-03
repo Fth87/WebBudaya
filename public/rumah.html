@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alam</title>
+    <link rel="icon" href="assets/component/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
@@ -12,10 +13,55 @@
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body class="p-0 m-0 bg-[#242424]">
+    <!-- Navbar -->
+    <header class="z-50 bg-transparent absolute w-full items-center transition duration-150 ease-in-out">
+      <div class="mx-4 2xl:mx-10 2xl:my-5 xl:my-2 px-2">
+        <div class="flex items-center relative justify-between">
+          <div class="px-4">
+            <a href="#home" class="nav-text font-extrabold text-white text-2xl py-2 flex">
+              <!-- <img src="" width="30px" alt="" class="mr-1.5 fill-black" />  -->
+              WeNdo</a
+            >
+          </div>
+
+          <div class="flex px-4 mr-10 items-center">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="white line hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+              <span class="white line hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="white line hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="dark:bg-neutral-900 lg:text-white hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:dark:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none font-semibold"
+            >
+              <ul class="block lg:flex 2xl:text-2xl dark:text-white nav-text">
+                <li class="group">
+                  <a href="index.html" class="text-dark py-2 mx-8 flex group-hover:text-main">Beranda</a>
+                </li>
+                <li class="group">
+                  <a href="rumah.html" class="text-dark py-2 mx-8 flex group-hover:text-main">Rumah</a>
+                </li>
+                <li class="group">
+                  <a href="tari.html" class="text-dark py-2 mx-8 group-hover:text-main flex">Tari</a>
+                </li>
+                <li class="group">
+                  <a href="adat.html" class="text-dark py-2 mx-8 group-hover:text-main flex">adat</a>
+                </li>
+                <li class="group">
+                  <a href="galeri.html" class="text-dark py-2 mx-8 group-hover:text-main flex">Galeri</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar End -->
     <!-- Rumah -->
     <div class="w-full">
       <!-- rumah honai -->
-      <div class="w-full h-[1500px] relative">
+      <div id="papua" class="w-full h-[1500px] relative">
         <div class="grid grid-rows-6 h-full">
           <div class="flex w-full h-full justify-center row-start-3 row-span-5">
             <div class="text-white z-40 w-[80%] lg:w-[50%] mr-0 lg:mr-48">
@@ -67,7 +113,7 @@
       <div class="h-[600px]"></div>
 
       <!-- rumah gadang -->
-      <div class="w-full h-[1000px] relative">
+      <div id="gadang" class="w-full h-[1000px] relative">
         <div class="h-[90px] w-[90px] lg:h-[120px] lg:w-[120px] absolute -bottom-[7rem] left-0 top-0 bg-[#a27b5c] z-10"></div>
         <div class="absolute w-full lg:w-1/2 h-screen lg:h-full top-0 left-0 z-0">
           <img src="assets/img/rumah/rumah gadang.jpg" alt="" class="object-center object-cover h-full w-full brightness-75" />
@@ -90,7 +136,7 @@
       <div class="h-[500px] w-full"></div>
 
       <!-- rumah radakng -->
-      <div class="w-full h-[1500px] relative">
+      <div id="radank" class="w-full h-[1500px] relative">
         <div class="grid grid-rows-6 h-full">
           <div class="flex w-full h-full justify-center row-start-3 row-span-5 relative">
             <div class="text-white z-40 w-[80%] lg:w-[50%] mr-0 lg:mr-52">
@@ -115,7 +161,7 @@
       <div class="h-[100px] w-full"></div>
 
       <!-- rumah lamin -->
-      <div class="w-full h-[1500px] relative">
+      <div id="lamin" class="w-full h-[1500px] relative">
         <div class="grid grid-rows-6 h-full">
           <div class="flex w-full h-full justify-center row-start-3 row-span-5">
             <div class="text-white z-40 w-[80%] lg:w-[50%] mr-0 lg:mr-48">
@@ -137,10 +183,10 @@
       </div>
       <!-- rumah lamin end -->
 
-      <div class="h-[100px] w-full"></div>
+      <div class="lg:h-[100px] w-full"></div>
 
       <!-- rumah bubungan tinggi -->
-      <div class="w-full h-[1500px] relative">
+      <div id="bubungantinggi" class="w-full h-[1500px] relative">
         <div class="grid grid-rows-6 h-full">
           <div class="flex w-full h-full justify-center row-start-2 row-span-5 relative">
             <div class="text-white z-40 w-[80%] lg:w-[50%] lg:mr-52">
@@ -165,7 +211,7 @@
       <div class="h-[500px] w-full"></div>
 
       <!-- rumah betang -->
-      <div class="w-full h-[1500px] relative">
+      <div id="betang" class="w-full h-[1500px] relative">
         <div class="grid grid-rows-6 h-full">
           <div class="flex w-full h-full justify-center row-start-3 row-span-5">
             <div class="text-white z-40 w-full h-[50%] grid grid-cols-2">
@@ -219,7 +265,7 @@
       <div class="h-[500px] w-full"></div>
 
       <!-- rumah Tongkonan -->
-      <div class="w-full h-[1000px] relative">
+      <div id="tongkongan" class="w-full h-[1000px] relative">
         <div class="grid grid-rows-6 grid-cols-2 h-full">
           <div class="flex w-full h-full content-center justify-center row-start-6 col-start-1 col-span-2 lg:row-start-2 lg:row-span-5 lg:col-start-2 z-40">
             <div class="text-white lg:ml-20 ml-0 w-[80%]">
@@ -244,7 +290,7 @@
       <div class="h-[1000px] w-full"></div>
 
       <!-- balla lompoa -->
-      <div class="w-full h-[1200px] relative">
+      <div id="balla" class="w-full h-[1200px] relative">
         <div class="absolute w-full h-screen">
           <img src="assets/img/rumah/rumah balla lompoa.jpg" alt="" class="brightness-75 lg:path2 w-full h-full object-center object-cover z-0" />
         </div>
@@ -272,7 +318,7 @@
       <div class="h-[500px] w-full"></div>
 
       <!-- rumah batak toba -->
-      <div class="w-full h-[1000px] relative">
+      <div id="bataktoba" class="w-full h-[1000px] relative">
         <div class="grid grid-rows-6 grid-cols-2 h-full">
           <div class="flex w-full h-full content-center justify-center lg:row-start-2 row-start-6 lg:row-end-5 row-end-6 col-start-1 col-span-2 lg:col-start-1 lg:col-span-1 z-20">
             <div class="text-white lg:ml-20 ml-0 w-[80%]">
@@ -297,7 +343,7 @@
       <div class="h-[700px] w-full"></div>
 
       <!-- rumah Bale -->
-      <div class="w-full h-[1500px] relative">
+      <div id="bale" class="w-full h-[1500px] relative">
         <div class="grid grid-rows-6 h-full">
           <div class="flex w-full h-full justify-center row-start-3 row-span-5 relative">
             <div class="text-white z-40 lg:w-[50%] w-[80%] mr-0 lg:mr-52">
@@ -322,7 +368,7 @@
       <div class="h-[2s00px] w-full"></div>
 
       <!-- nanggroe aceh darussalam -->
-      <div class="w-full h-[1200px] relative">
+      <div id="aceh" class="w-full h-[1200px] relative">
         <div class="absolute w-full h-screen">
           <img src="assets/img/rumah/rumoh aceh.jpg" alt="" class="brightness-75 lg:path2 w-full h-full object-center object-cover z-0" />
         </div>
@@ -376,7 +422,26 @@
       <!-- rumah bugis end -->
     </div>
     <!-- Rumah End -->
-    <div class="h-[500px] w-full"></div>
+    <div class="h-[600px]"></div>
+
+    <footer class="rounded-lg shadow md:px-6 md:py-8 bg-neutral-900">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <a href="" class="flex items-center mb-4 sm:mb-0">
+          <img src="assets/component/logo.png" class="mr-3 w-8" alt="" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">WeNdo</span>
+        </a>
+        <ul class="flex flex-wrap items-center mb-6 text-sm text-white sm:mb-0">
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Tentang</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Hubungi kami</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span class="block text-sm text-white sm:text-center">© 2022 <a href="#beranda" class="hover:underline">WeNdo™</a>. All Rights Reserved. </span>
+    </footer>
     <script src="script.js"></script>
     <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
