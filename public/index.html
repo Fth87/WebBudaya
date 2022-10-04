@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeNdo</title>
     <link rel="icon" href="assets/component/logo.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.1/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body class="p-0 m-0">
     <!-- Navbar -->
-    <header class="z-50 bg-transparent absolute w-full items-center transition duration-150 ease-in-out">
+    <header class="navbar-fixed z-50 bg-transparent absolute w-full items-center transition duration-150 ease-in-out">
       <div class="mx-4 2xl:mx-10 2xl:my-5 xl:my-2 px-2">
         <div class="flex items-center relative justify-between">
           <div class="px-4">
@@ -66,14 +68,16 @@
         <!-- Item 1 -->
         <div id="carousel-item-1" class="duration-700 ease-in-out w-full h-full absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
           <img src="assets/img/beranda/branda.jpg" class="absolute object-cover object-center block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-50" alt="..." />
+
           <div class="absolute w-full h-full">
             <div class="flex w-full h-full justify-center">
               <div class="self-center w-[80%] text-white font-bold sm:text-5xl lg:text-6xl 2xl:text-7xl p-4 text-center tracking-wide">
-                Adat <br />
-                <span class="font-light text-lg md:text-xl lg:text-2xl">
+                <p>Adat</p>
+
+                <p class="font-light text-lg md:text-xl lg:text-2xl">
                   gagasan kebudayaan yang terdiri dari nilai-nilai hukum kebiasaan, norma, dan hukum adat yang mengatur tingkah laku manusia antara satu sama lain yang lazim dilakukan di suatu kelompok masyarakat adat yang diwariskan secara
-                  turun temurun</span
-                >
+                  turun temurun
+                </p>
               </div>
             </div>
           </div>
@@ -84,11 +88,9 @@
           <div class="absolute w-full h-full">
             <div class="flex w-full h-full justify-center">
               <div class="self-center w-[80%] text-white font-bold sm:text-5xl lg:text-6xl 2xl:text-7xl p-4 text-center tracking-wide">
-                lestari <br />
-                <span class="font-light text-lg md:text-xl lg:text-2xl"
-                  >Sebuah tugas yang diemban oleh seluruh <br />
-                  lapisan masyarakat kepada Budaya.</span
-                >
+                <p>lestari</p>
+
+                <p class="font-light text-lg md:text-xl lg:text-2xl">Sebuah tugas yang diemban oleh seluruh lapisan masyarakat kepada Budaya.</p>
               </div>
             </div>
           </div>
@@ -138,7 +140,7 @@
       <div class="w-[150%] h-[150%] absolute z-0 -bottom-[20rem] -left-[10rem]">
         <img src="assets/component/map3.svg" alt="" class="object-center object-cover z-0" />
       </div>
-      <p class="w-[80%] z-10 self-center text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-slate-800">
+      <p data-aos="zoom-in" data-aos-duration="500" class="w-[80%] z-10 self-center text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-slate-800">
         Adat,budaya,bahasa merupakan tiga kata kunci utama dalam membangun sebuah negara yang kuat dan kolod,Budaya adalah suatu cara hidup yang berkembang dan dimiliki bersama oleh sekumpulan orang, serta diturunkan dari generasi ke
         generasi. Budaya terbentuk dari banyak unsur yang rumit, termasuk sistem agama dan politik, adat istiadat, bahasa, perkakas, pakaian, bangunan, dan karya seni.
       </p>
@@ -165,7 +167,7 @@
           <div class="absolute bottom-0 right-0 rotate-180">
             <img src="assets/component/titik koma.png" alt="" class="w-[40px] lg:w-[50px] xl:w-[60px] 2xl:w-[70px]" />
           </div>
-          <div class="self-center">
+          <div data-aos="zoom-in-right" data-aos-duration="500" class="self-center">
             <p class="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-slate-800">menurut saya inti dari <span class="font-semibold">kebudayaan</span> adalah ialah <span class="font-semibold">kesenangan</span></p>
           </div>
         </div>
@@ -183,7 +185,7 @@
           <div class="absolute bottom-0 right-0 rotate-180">
             <img src="assets/component/titik koma.png" alt="" class="w-[40px] lg:w-[50px] xl:w-[60px] 2xl:w-[70px]" />
           </div>
-          <div class="self-center">
+          <div data-aos="zoom-in-left" data-aos-duration="500" class="self-center">
             <p class="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-slate-800">
               Bahasa kita <span class="font-semibold">berbeda,</span> budaya kita <span class="font-semibold">berbeda,</span> agama kita <span class="font-semibold">berbeda,</span> bukankah itu indah? acungkan kepalmu kawan,lawan
               <span class="font-semibold">ketidak adilan.</span> Satukan semangat kita, anak semua bangsa
@@ -224,7 +226,7 @@
           <div class="absolute bottom-0 right-0 rotate-180">
             <img src="assets/component/titik koma.png" alt="" class="w-[40px] lg:w-[50px] xl:w-[60px] 2xl:w-[70px]" />
           </div>
-          <div class="self-center">
+          <div data-aos="zoom-in-right" data-aos-duration="500" class="self-center">
             <p class="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-slate-800">
               <span class="font-semibold">islam</span> datang bukan untuk <span class="font-semibold">mengubah budaya</span> leluhur kita untuk jadi budaya arab.bukan untuk aku jadi ana, sampeyan jadi antum, sedulur jadi akhi. kita
               pertahankan milik kita, <span class="font-semibold">kita harus filtrasi budayanya,</span> tapi bukan ajarannya
@@ -280,7 +282,7 @@
           <img src="assets/component/map.svg" alt="" class="w-full h-full object-cover" />
         </div>
       </div>
-      <div class="text-center text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-slate-800 w-[80%] justify-self-center">
+      <div data-aos="zoom-in" data-aos-duration="500" class="text-center text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-slate-800 w-[80%] justify-self-center">
         <h1 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold">Bhinneka Tunggal Ika</h1>
         <p>Kami memang berbeda, namun kami selalu memegang teguh Bhinneka Tunggal ika. Walaupun berbeda beda namun tetap satu jua</p>
       </div>
@@ -308,8 +310,13 @@
       <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="#beranda" class="hover:underline">WeNdo™</a>. All Rights Reserved. </span>
     </footer>
 
-    <script src="script.js"></script>
     <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
